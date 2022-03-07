@@ -20,11 +20,12 @@ body {
 
 /* HEADER / NAV BAR STYLES START */
 header {
-  padding: 20px 35px;
+  padding: 15px 45px;
   background-color: var(--tertiary-color);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  height: auto;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -32,6 +33,7 @@ header {
   background-size: cover;
   background-attachment: fixed;
   background-position: 80%;
+  z-index: 9999;
 }
 
 header h1 {
@@ -50,7 +52,7 @@ header a {
 }
 
 header nav {
-  margin: 7px 0;
+  margin: 5px 0;
 }
 
 header nav ul {
@@ -64,7 +66,7 @@ header nav ul {
 header nav ul li a {
   padding: 15px 15px;
   font-weight: lighter;
-  font-size: 1.55vw;
+  font-size: 15px;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -176,7 +178,7 @@ section {
 
 .about p, .work p {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 14.5px;
   font-weight: lighter;
   letter-spacing: 1.5px;
   border-left: #041f2e solid 3px;
@@ -274,116 +276,57 @@ footer h1 {
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
-  header {
-    padding-bottom: 0;
-    justify-content: center;
-    position: relative;
+* {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  width: 980px;
+  } 
+
+.about p, .work p, .flexpic, footer, .contact p {
+  border-left: none;
   }
 
-  header h1 {
-    width: 100%;
-    text-align: center;
+header {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
   }
 
-  header nav ul {
-    margin-top: 20px;
-    width: 100%;
-    justify-content: center;
-  }
-
-  header nav ul li a {
-    font-size: 20px;
-  }
-
-  footer h2, footer div {
-    text-align: center;
-    width: 100%;
-  }
-
-  .hero-cta, .hero-form {
-    width: 100%;
-  }
-  
-  .hero-cta {
-    text-align: center;
-  }
-
-  .section-title {
-    width: 80%;
-  }
-  
-  .trainer {
-    flex: 0 70%;
-  }
-  
-  .contact-info iframe{
-    flex: 1 100%;
+footer {
+  width: auto;
   }
 }
-
-
-
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-  section {
-    padding: 30px 15px;
+* {
+  width: 768px;
   }
-
-  .step h3 {
-    flex: 1 100%;
-    text-align: center;
+  
+header {
+  width: auto;
   }
-
-  .step-info {
-    flex: 2 100%;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .step-img {
-    flex: 0 32%;
-    margin-right: 0;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-
-  .step-text {
-    flex: 100%;  
-  }
-
-  .trainer-bio h3, .trainer-bio h4 {
-    display: block;
+  
+footer {
+  width: auto;
   }
 }
 
+
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-  .hero-form button {
-    width: 100%;
+* {
+  width: 575px;
   }
 
-  .section-title {
-    width: 95%;
+  header {
+    width: auto;
   }
 
-  .intro p {
-    width: 100%;
-  }
-
-  .trainer {
-    flex: 0 100%;
-  }
-
-  .contact-info {
-    text-align: center;
-  }
-
-  .contact-info > * {
-    flex: 0 100%;
-  }
-
-  .contact-form {
-    order: 3;
+  footer {
+    width: auto;
   }
 }
