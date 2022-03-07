@@ -1,0 +1,389 @@
+:root {
+  --primary-color: #d9ff00;
+  --secondary-color: #329ed8;
+  --tertiary-color: #000000;
+  background-color: #c7eafd;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--tertiary-color);
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+
+
+/* HEADER / NAV BAR STYLES START */
+header {
+  padding: 20px 35px;
+  background-color: var(--tertiary-color);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background-image: var(--primary-color);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 80%;
+}
+
+header h1 {
+  font-weight: bold;
+  margin: 0;
+  font-size: 22px;
+  color: white;
+  
+}
+
+header a {
+  text-decoration: none;
+  color: var(--primary-color);
+  color: white;
+  text-shadow: 2px 2px 22px #2d7bd4;
+}
+
+header nav {
+  margin: 7px 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 15px 15px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+
+
+/* BOX TEXT STYLE START */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  font-weight: bold;
+  font-size: 22px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: #ffffff solid 5px;
+  background-color: #00457e;
+}
+
+span {
+  font-size: 14px;
+  font-style: italic;
+
+}
+
+
+
+/* SECTION STYLES START */
+section {
+  padding: 40px;
+}
+
+
+
+/* HERO STYLES START */
+.hero {
+  background-image: url('../images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  justify-content: flex-start;
+  margin: 3.5%;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.2;
+  border-bottom: #041f2e solid 3 px;
+}
+
+.hero-cta img {
+  width: 155px;
+}
+
+.hero-cta h2 {
+  margin: 30px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 20%;
+  font-size: 34px;
+  width: 170px;
+  height: auto;
+  color: white;
+  text-shadow: 2px 2px 16px #000000
+}
+
+
+
+/* BODY STYLES START */
+.about {
+  background: var(--secondary-color);
+}
+
+.about, .work, .contact {
+  display: flex;
+  flex-wrap:flex;
+  height: auto;
+}
+
+.about h1, .work h1, .contact h1 {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: 34px;
+  width: 150px;
+  height: auto;
+  color: white;
+  text-shadow: 2px 2px 8px #000000;
+}
+
+.about p, .work p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+  letter-spacing: 1.5px;
+  border-left: #041f2e solid 3px;
+  color: #000000;
+  width: 800px;
+  padding: 10px 25px;
+}
+
+.contact p {
+  justify-content: space-evenly;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 21px;
+  font-weight: lighter;
+  letter-spacing: 1.5px;
+  border-left: #041f2e solid 3px;
+  color: #000000;
+  width: 800px;
+  padding: 10px 25px;
+}
+
+.contact p:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 15px;
+  text-shadow: none;
+}
+  
+.contact {
+  background: var(--secondary-color);
+}
+
+
+
+/*  BODY IMG STYLE START  */
+.flexpic {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: auto;
+  border-left: #024e76 solid 3px;
+}
+
+.pic {
+  width: 800px;
+  padding: 10px 50px;
+  height: auto;
+}
+
+.pic img {
+  width: 800px;
+  height: auto;
+  border: #fff solid 10px;
+}
+
+.pics {
+  width: 900px;
+  padding: 0 25px;
+  height: auto;
+}
+
+.pics img {
+  width: 398px;
+  height: auto;
+  border: #fff solid 10px;
+}
+
+.shrink img {
+  transition: 3s ease;
+  }
+  
+.shrink img:hover{
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: 1s ease;
+  }
+
+
+
+/*  FOOTER STYLE START  */
+footer {
+  background-color: #000000;
+  height: 100px;
+}
+
+footer h1 {
+  color: white;
+  text-shadow: 2px 2px 8px #000000;
+  font-size: 16px;
+}
+
+
+
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  footer h2, footer div {
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-cta, .hero-form {
+    width: 100%;
+  }
+  
+  .hero-cta {
+    text-align: center;
+  }
+
+  .section-title {
+    width: 80%;
+  }
+  
+  .trainer {
+    flex: 0 70%;
+  }
+  
+  .contact-info iframe{
+    flex: 1 100%;
+  }
+}
+
+
+
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+
+  .step h3 {
+    flex: 1 100%;
+    text-align: center;
+  }
+
+  .step-info {
+    flex: 2 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .step-img {
+    flex: 0 32%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .step-text {
+    flex: 100%;  
+  }
+
+  .trainer-bio h3, .trainer-bio h4 {
+    display: block;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  .hero-form button {
+    width: 100%;
+  }
+
+  .section-title {
+    width: 95%;
+  }
+
+  .intro p {
+    width: 100%;
+  }
+
+  .trainer {
+    flex: 0 100%;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-info > * {
+    flex: 0 100%;
+  }
+
+  .contact-form {
+    order: 3;
+  }
+}
